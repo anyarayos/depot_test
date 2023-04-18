@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+    scroll-behavior: smooth;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+overflow-x: hidden;
+}
+
+      /* Header */
+      .sticky {
+        position: fixed;
+        top: 0;
+      }
+      header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        background-color: #ffff;
+        width: 100%;
+        z-index: 1;
+      }
+
+      #nav-title {
+        margin-right: auto;
+        font-size: 1.5em;
+        padding-left: 20px;
+      }
+
+      header li {
+        list-style: none;
+        display: inline-block;
+        padding: 0 20px;
+      }
+
+      header a {
+        text-decoration: none;
+        color: #555;
+        transition: all 0.3s ease 0s;
+      }
+
+      header a:hover {
+        color: #b2dfdb;
+      }
+
+      .middle-margin-center {
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      /* Colors */
+      .white {
+        color: #ffff;
+      }
+      .blue {
+        color: #0067d5;
+      }
+      .gray {
+        color: #a1a1a1;
+      }
+      .deep-gray {
+        color: #2e2e2e;
+      }
+
+      .bg-white{
+        background-color: #ffff;
+      }
+
+      .bg-gray{
+        background-color: #f6f5f5;
+      }
+
+      /* Remove Default Input Style */
+      input, textarea {
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: hidden;
+      }
+
+      .no-outline:focus {
+        outline: none;
+      }
+
+      /* Apply flex */
+      .container {
+        display: flex;
+      }
+      .justify-content-center {
+        justify-content: center;
+      }
+
+      .justify-content-evenly {
+        justify-content: space-evenly;
+      }
+
+      .about, .whydepot{
+        justify-content: center;
+      }
+
+      /* Cards */
+      .card {
+        text-align: center;
+      }
+      .padding-card {
+        padding: 20px;
+      }
+      .text-align-center {
+        text-align: center;
+      }
+
+      /* Paddings */
+      .padding-50{
+        padding: 50px;
+      }
+      .padding-30{
+        padding: 20px;
+      }
+
+      /* Font Sizing */
+      .font-3{
+        font-size: 3em;
+      }
+      .font-4{
+        font-size: 4em;
+      }
+      .font-2{
+        font-size: 2em;
+      }
+
+    /* Borders */
+.border-radius-50{
+    border-radius: 50%;
+}
+
+.border-radius-30{
+    border-radius: 10px;
+}
+
+.border-radius-20{
+    border-radius: 20%;
+}
+.border-radius-10{
+    border-radius: 2%;
+}
+.border-solid-gray{
+    border: 2px solid #E9ECEF;
+}
+
+/* Lists */
+.list-style-type-none{
+list-style-type: none;
+}
+      /* Divider */
+      .divider{
+        margin: 10px auto !important;
+        width: 60px;
+        padding: 1.5px; 
+        background-color:  #c0bebe;
+        border: none;
+      }
+
+.margin-t-b-8{
+    margin: 8px 0px 8px;
+}
+
+      /* Margins */
+      .margin-t-15{
+        margin-top: 15px;
+      }
+
+      .margin-t-8{
+        margin-top: 8px;
+      }
+      
+      .margin-4{
+        margin: 4px;
+      }
+
+      .margin-l-20{
+        margin-left: 20px ;
+      }
+
+      /* Buttons */
+      .social-media{
+        background-color: #0067d5;
+        color: #ffff;
+        padding: 10px;
+      }
+
+      .buy-now{
+        background-color: #0067d5;
+        color: #ffff;
+        padding: 8px;
+        border-radius: 8%;
+      }
+      .send-message{
+        background-color: #0067d5;
+        color: #ffff;
+        padding: 1em;
+        border-radius: 1em;
+      }
+
+      button{
+        border-width: 0;
+        font-family: inherit;
+        font-size: inherit;
+        font-style: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+      }
+
+      /* Font */
+      .lighter{
+        font-weight: lighter;
+      }
+      /* Links */
+      a{
+        text-decoration: none;
+        color:#0067d5 ;
+      }
+
+      /* Footer */
+      footer{
+        background-color: #333333;
+        justify-content: center;
+      }
+      .tracking{
+        width: 400px;
+      }
+
+      /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            .container,header {
+                flex-wrap: wrap!important;         
+            } 
+            header li {
+              list-style: none;
+              display: none;
+              padding: 0 20px;
+            }
+            .cover,.depot-img{
+              height: 100%;
+              width: 100vw;
+              object-fit: cover;
+             }
+             .card, video, footer{
+              width: 100vw;
+             }
+             .about, .whydepot{
+              justify-content: flex-start!important;
+            }
+            .whydepot{
+              flex-direction: column-reverse;
+             
+            }
+            .text{
+              width: 100vw !important; 
+            }
+            .footer-left{
+              width: 100%!important;
+              text-align: center;
+            }
+
+            .title{
+              font-size: 2em!important;
+            }
+            .subtitle{
+              font-size: 0.7em!important;
+            }
+            .tracking{
+              width: 200px;
+            }
+            .contact{
+              width: 100%!important;
+            }
+          
+           
+
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+          .cover{
+            height: 100%;
+            width: 100vw;
+            object-fit: cover;
+           }
+         
+            
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+          .cover{
+            height: 100%;
+            width: 100vw;
+            object-fit: cover;
+           }
+          
+          
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+          
+
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            
+        }
